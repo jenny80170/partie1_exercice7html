@@ -1,12 +1,15 @@
-#backgroundcolorSteelBlue {
+.backgroundcolorSteelBlue {
   background-color: SteelBlue;
 }
-#backgroundcolorDarkViolet {
+.backgroundcolorDarkViolet {
   background-color: DarkViolet;
 }
-#backgroundcolorDeepPink {
+.backgroundcolorDeepPink {
   background-color: DeepPink;
 }
 #CB {
   margin-left: 90px;
+}
+.listCard {
+  padding-left: 5%;
 }

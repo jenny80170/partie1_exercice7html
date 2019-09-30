@@ -3,57 +3,57 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title></title>
+  <title>Exercice 7</title>
 </head>
 <body>
   <form>
-    <fieldset id="backgroundcolorSteelBlue">
-      <legend id="backgroundcolorSteelBlue">
-        Votre identité
-      </legend>
-          <label for="Nom">1.Nom :</label>
-          <input type="text" name="Nom" id="Nom" value="" placeholder="Nom" required>
-          <br>
-          <label for="Prenom">2.Prenom :</label>
-          <input type="text" name="Prenom" id="Prenom" value="" placeholder="Prenom" required>
-          <br>
-          <label for="mail">3.Adresse mail :</label>
-          <input type="email" name="mail" id="mail" value="" placeholder="Adresse mail" required>
+    <fieldset class="backgroundcolorSteelBlue">
+      <legend class="backgroundcolorSteelBlue">Votre identité</legend>
+      <label for="lastName">1.Nom :</label>
+      <input type="text" name="lastName" id="lastName" placeholder="exemple : Malleret" required />
+      <br>
+      <label for="firstName">2.Prenom :</label>
+      <input type="text" name="firstName" id="firstName" placeholder="exemple : Jennifer" required />
+      <br>
+      <label for="mail">3.Adresse mail :</label>
+      <input type="email" name="mail" id="mail" value="" placeholder="exemple@hotmail.fr" required />
     </fieldset>
-    <fieldset id="backgroundcolorDarkViolet">
-      <legend id="backgroundcolorDarkViolet">
+    <fieldset class="backgroundcolorDarkViolet">
+      <legend class="backgroundcolorDarkViolet">
         Adresse de livraison
       </legend>
-          <label for="Adresse">1.Adresse :</label>
-          <textarea id=Adresse name=Adresse rows=5 required></textarea>
-          <br>
-          <label for="Code postal">2.Code postal :</label>
-          <input type="text" name="Code postal" id="Code postal" value="" placeholder="Code postal" required>
-          <br>
-          <label for="Ville">3.Ville :</label>
-          <input type="text" name="Ville" id="Ville" value="" placeholder="Ville" required>
+      <label for="address">1.Adresse :</label>
+      <textarea id="address" name="address" rows=5 required></textarea>
+      <br>
+      <label for="zipCode">2.Code postal :</label>
+      <input type="text" name="zipCode" id="zipCode" placeholder="Code postale" required />
+      <br>
+      <label for="Ville">3.Ville :</label>
+      <input type="text" name="Ville" id="Ville" placeholder="Ville" required />
     </fieldset>
-    <fieldset id="backgroundcolorDeepPink">
-      <legend id="backgroundcolorDeepPink">
+    <fieldset class="backgroundcolorDeepPink">
+      <legend class="backgroundcolorDeepPink">
         informations de réglement
       </legend>
-          <legend>
-            1.Type de carte bancaire
-          </legend>
-        <input name="CB" id="CB" type="radio" value="visa" required>
-        <label for="CB" class="radioCenter">VISA</label>
-        <br>
-        <input type="radio" name="CB" id="CB" value="mastercard" required>
-        <label for="CB" class="radioCenter">Mastercard</label>
-        <br>
-          <label for="numéro_de_carte">2.Numéro de carte :</label>
-          <input type="text" name="numéro_de_carte" id="numéro_de_carte" value="" placeholder="Numéro de carte" required>
-          <br>
-          <label for="code_de_sécurité">3.Code de sécurité :</label>
-          <input type="text" name="code_de_sécurité" id="code_de_sécurité" value="" placeholder="Code de sécurité" required>
-          <br>
-          <label for="titulaire">4.Nom du titulaire :</label>
-          <input type="text" name="titulaire" id="titulaire" value="" placeholder="Nom du titulaire" required>
+      <p>1.Type de carte bancaire</p>
+      <div class="listCard">
+        <input name="CB" id="cardVisa" type="radio" value="visa" required />
+        <label for="cardVisa" class="radioCenter">VISA</label>
+      </div>
+      <div class="listCard">
+        <input type="radio" name="CB" id="cardMastercard" value="mastercard" required />
+        <label for="cardMastercard" class="radioCenter">Mastercard</label>
+      </div>
+      <label for="cardNumber">2.Numéro de carte :</label>
+      <input type="text" name="cardNumber" id="cardNumber" placeholder="Numéro de carte" required />
+      <div>
+        <label for="security">3.Code de sécurité :</label>
+        <input type="text" name="security" id="security" placeholder="Code de sécurité" required />
+      </div>
+      <div>
+        <label for="owner">4.Nom du titulaire :</label>
+        <input type="text" name="owner" id="owner" placeholder="Nom du titulaire" required />
+      </div>
     </fieldset>
     <button type="submit" name="button">J'achète !</button>
   </form>
